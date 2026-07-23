@@ -1,11 +1,6 @@
-__pycache__/
-*.pyc
-*.pyo
+node_modules/
 *.db
 osm_data.json
-scratch/
-.venv/
-venv/
 .env
 .DS_Store
 Thumbs.db

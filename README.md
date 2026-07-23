@@ -5,7 +5,7 @@ Directorio nacional de precos de combustiveis e postos de carregamento eletrico 
 ## Stack
 
 - **Frontend:** Vanilla HTML/CSS/JS, Leaflet.js, Leaflet.markercluster
-- **Backend:** Python http.server + SQLite
+- **Backend:** Node.js + Express + SQLite (sql.js)
 - **Dados:** DGEG (precos), OpenStreetMap (POIs)
 
 ## Funcionalidades
@@ -21,14 +21,14 @@ Directorio nacional de precos de combustiveis e postos de carregamento eletrico 
 ## Instalacao
 
 ```bash
-pip install -r requirements.txt  # Se existir
+npm install
 ```
 
 ## Executar
 
 ```bash
-python server.py
-# Abrir http://localhost:8000
+npm start
+# Abrir http://localhost:8080
 ```
 
 Ou usar `iniciar.bat` (Windows).
@@ -36,6 +36,5 @@ Ou usar `iniciar.bat` (Windows).
 ## Pipeline de Dados
 
 Scripts disponiveis para atualizar dados:
-- `fetch_osm.py` / `process_osm.py` - Dados OSM
-- `populate_portugal.py` - Dados DGEG
-- `update_ev_db.py` - Atualizar carregadores EV
+- `node fetch_osm.js` - Descarregar dados OSM atuais
+- `node process_osm.js` - Processar dados OSM para a base de dados

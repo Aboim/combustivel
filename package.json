@@ -1,0 +1,16 @@
+{
+  "name": "fuelsmart-portugal",
+  "version": "2.0.0",
+  "description": "Directorio nacional de precos de combustiveis e postos de carregamento eletrico em Portugal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "fetch-osm": "node fetch_osm.js",
+    "process-osm": "node process_osm.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "sql.js": "^1.14.1"
+  },
+  "allowScripts": {}
+}
