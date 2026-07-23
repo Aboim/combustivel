@@ -5,3 +5,5 @@ osm_data.json
 .DS_Store
 Thumbs.db
 *.log
+
+target/
